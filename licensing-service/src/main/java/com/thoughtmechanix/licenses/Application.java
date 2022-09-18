@@ -2,7 +2,6 @@ package com.thoughtmechanix.licenses;
 
 import com.thoughtmechanix.licenses.config.ServiceConfig;
 import com.thoughtmechanix.licenses.events.models.OrganizationChangeModel;
-import com.thoughtmechanix.licenses.utils.UserContextInterceptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
