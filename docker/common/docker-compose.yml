@@ -13,7 +13,7 @@ services:
        EUREKASERVER_PORT: "8761"
        ENCRYPT_KEY:       "IMSYMMETRIC"
   zipkin:
-    image: johncarnell/tmx-zipkinsvr:chapter9
+    image: johncarnell/tmx-zipkinsvr:chapterAll
     ports:
       - "9411:9411"
     environment:
