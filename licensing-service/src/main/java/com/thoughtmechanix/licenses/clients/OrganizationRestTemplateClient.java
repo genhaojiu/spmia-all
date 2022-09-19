@@ -11,11 +11,15 @@ import org.springframework.cloud.sleuth.Span;
 import org.springframework.cloud.sleuth.Tracer;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 @Component
 public class OrganizationRestTemplateClient {
+    @Autowired
+    OAuth2RestTemplate restTemplate;
+	
     @Autowired
     RestTemplate restTemplate;
 

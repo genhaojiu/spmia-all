@@ -17,10 +17,13 @@
     <version>1.4.4.RELEASE</version>
   </parent>
   <modules>
+    <module>authentication-service</module>
     <module>confsvr</module>
     <module>licensing-service</module>
     <module>organization-service</module>
+    <module>orgservice-new</module>
     <module>eurekasvr</module>
+    <module>specialroutes-service</module>
     <module>zuulsvr</module>
     <module>zipkinsvr</module>
   </modules>

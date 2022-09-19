@@ -3,6 +3,10 @@ package com.thoughtmechanix.zuulsvr.filters;
 import com.netflix.zuul.context.RequestContext;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
+import java.util.Map;
+
+
 @Component
 public class FilterUtils {
     public static final String CORRELATION_ID = "tmx-correlation-id";

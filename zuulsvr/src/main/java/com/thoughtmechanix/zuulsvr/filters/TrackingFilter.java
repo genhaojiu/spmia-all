@@ -2,10 +2,13 @@ package com.thoughtmechanix.zuulsvr.filters;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import com.thoughtmechanix.zuulsvr.config.ServiceConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import javax.xml.bind.DatatypeConverter;
 
 @Component
 public class TrackingFilter extends ZuulFilter{
@@ -14,7 +17,10 @@ public class TrackingFilter extends ZuulFilter{
     private static final Logger logger = LoggerFactory.getLogger(TrackingFilter.class);
 
     @Autowired
-    FilterUtils filterUtils;
+    private FilterUtils filterUtils;
+
+    @Autowired
+    private ServiceConfig serviceConfig;
 
     @Override
     public String filterType() {
