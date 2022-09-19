@@ -84,7 +84,7 @@ services:
       ZIPKIN_PORT:         "9411"
       ENCRYPT_KEY:       "IMSYMMETRIC"  
       
-    authenticationservice:
+  authenticationservice:
       image: johncarnell/tmx-authentication-service:chapter7
       ports:
         - "8901:8901"
