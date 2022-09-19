@@ -20,8 +20,8 @@ public class OrganizationRestTemplateClient {
     @Autowired
     OAuth2RestTemplate restTemplate;
 	
-    @Autowired
-    RestTemplate restTemplate;
+//    @Autowired
+//    RestTemplate restTemplate;
 
     @Autowired
     Tracer tracer;
